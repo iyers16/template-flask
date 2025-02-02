@@ -7,7 +7,7 @@ CORS(app)  # Enable CORS
 
 @app.route("/")
 def hello_world():
-    return jsonify(message="Hello, World!")
+    return render_template("index.html")
 
 if __name__ == "__main__":
     port = int(os.getenv("PORT", 5000))
